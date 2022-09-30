@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConsultarProductosActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center">
+
+        <EditText
+            android:id="@+id/txtCodigoC"
+            android:layout_width="274dp"
+            android:layout_height="wrap_content"
+            android:hint="Codigo"
+            android:layout_marginEnd="16dp"
+            />
+
+        <Button
+            android:id="@+id/btnBuscarP"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:onClick="OnClick"
+            android:text="BUSCAR" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <EditText
+            android:id="@+id/txtDescripcionC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Descripcion"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:id="@+id/txtPrecioC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Precio"
+            android:layout_marginTop="15dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp">
+
+        <Button
+            android:id="@+id/btnActualizarP"
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:text="ACTUALIZAR"
+            android:layout_gravity="center"
+            android:layout_marginEnd="16dp"/>
+
+        <Button
+            android:id="@+id/btnEliminarP"
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:text="ELIMINAR"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+</LinearLayout>
+
